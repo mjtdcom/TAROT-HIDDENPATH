@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Tarot Card Reader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>THE HIDDEN PATH OF FORTUNE</h1>
+    
+    <div id="tarot-cards-container">
+        <div class="tarot-card hidden-card" onclick="revealCard(this)"></div>
+        <div class="tarot-card hidden-card" onclick="revealCard(this)"></div>
+        <div class="tarot-card hidden-card" onclick="revealCard(this)"></div>
+    </div>
+    <button onclick="resetCards()">Reset</button>
+
+    <div id="card-display">
+        <img id="tarot-card-image" src="" alt="Your Card" style="display: none;">
+        <p id="card-meaning"></p>
+        <audio id="flip-sound" src="sounds/card-flip.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
